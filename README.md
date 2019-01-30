@@ -10,8 +10,9 @@ sprite kit template to get started using sprite kit without all the gumpf
 ```
 
 ## code for adding physics to a spriteNode
-        ```swift
+
+```swift
         bot.physicsBody = SKPhysicsBody(rectangleOf: bot.size)
         bot.physicsBody?.affectedByGravity = false
         bot.physicsBody?.isDynamic = false
-        ```
+```
