@@ -33,8 +33,8 @@ class GameScene: SKScene {
     
     override func mouseDown(with event: NSEvent) {
        
-        
-       // let s = SKSpriteNode(color: .yellow, size: CGSize(width: 20, height: 20))
+         //let loc = event.location(in: self)
+       
        
     }
     
