@@ -22,6 +22,7 @@ class GameScene: SKScene {
        
         
     }
+    //MARK:LOOP FUNCTION
     
     override func update(_ currentTime: TimeInterval) {
        
