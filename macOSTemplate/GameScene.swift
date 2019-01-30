@@ -17,19 +17,12 @@ class GameScene: SKScene {
    
     
    
-    //var bot:SKSpriteNode!
+   
    
     
     //MARK:SETUP FUNCTION
     override func didMove(to view: SKView) {
-        /**
-        burger = SKSpriteNode(imageNamed: "burger.png")
-        burger.position = CGPoint(x: 300, y: 300)
-        burger.physicsBody = SKPhysicsBody(texture: burger.texture!, size: burger.size)
-        burger.physicsBody?.affectedByGravity = false
-        burger.physicsBody?.isDynamic = false
-        addChild(burger)
- **/
+    
         let bot = SKSpriteNode(color: .white, size: CGSize(width: frame.width, height: 40))
         bot.position = CGPoint(x: frame.width/2, y: 40)
         bot.physicsBody = SKPhysicsBody(rectangleOf: bot.size)
@@ -41,12 +34,7 @@ class GameScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
-        /**
-       burger.position.x += 5
-        if(burger.position.x > frame.width){
-            burger.position.x = 0
-        }
-         **/
+       
     }
     
     
