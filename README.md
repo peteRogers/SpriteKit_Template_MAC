@@ -16,3 +16,12 @@ sprite kit template to get started using sprite kit without all the gumpf
         bot.physicsBody?.affectedByGravity = false
         bot.physicsBody?.isDynamic = false
 ```
+## code for a for loop using the stride command
+
+```swift
+        for x in stride(from: 0, to:frame.width, by: 25){
+           let s = SKSpriteNode(color: .white, size: CGSize(width: 25, height: 25))
+           s.position = CGPoint(x: x, y: frame.height/2)
+           addChild(s)
+        }
+```
