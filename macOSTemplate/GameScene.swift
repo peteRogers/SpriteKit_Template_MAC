@@ -13,21 +13,11 @@ import GameplayKit
 class GameScene: SKScene {
     
     
-  
-   
-    
-   
-   
-   
-    
     //MARK:SETUP FUNCTION
     override func didMove(to view: SKView) {
     
-        let bot = SKSpriteNode(color: .white, size: CGSize(width: frame.width, height: 40))
+        let bot = SKSpriteNode(color: .white, size: CGSize(width: 40, height: 40))
         bot.position = CGPoint(x: frame.width/2, y: 40)
-        bot.physicsBody = SKPhysicsBody(rectangleOf: bot.size)
-        bot.physicsBody?.affectedByGravity = false
-        bot.physicsBody?.isDynamic = false
         addChild(bot)
        
         
@@ -42,14 +32,10 @@ class GameScene: SKScene {
     
     
     override func mouseDown(with event: NSEvent) {
-        /**
-        let loc = event.location(in: self)
-        let s = SKSpriteNode(color: .yellow, size: CGSize(width: 20, height: 20))
-        s.position = CGPoint(x: loc.x, y: frame.height)
-        s.physicsBody = SKPhysicsBody(rectangleOf: s.size)
-        s.name = "block"
-        addChild(s)
-        **/
+       
+        
+       // let s = SKSpriteNode(color: .yellow, size: CGSize(width: 20, height: 20))
+       
     }
     
     override func mouseDragged(with event: NSEvent) {
