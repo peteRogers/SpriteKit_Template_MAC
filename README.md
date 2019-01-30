@@ -25,13 +25,12 @@ sprite kit template to get started using sprite kit without all the gumpf
            addChild(s)
         }
 ```
-##code for accessing a sprite that has been touched by the cursor
+## code for accessing a sprite that has been touched by the cursor
 needs to be in the one of the mouseEvent functions
 
 ```swift
-         let loc = event.location(in: self)
+        let loc = event.location(in: self)
         let touchedNode = self.atPoint(loc)
-        
         if let r:SKSpriteNode = touchedNode as? SKSpriteNode{
             r.color = .green
         }
