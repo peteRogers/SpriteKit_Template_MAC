@@ -35,3 +35,10 @@ needs to be in the one of the mouseEvent functions
             r.color = .green
         }
 ```
+## Move Sprite left and right with an SKaction tp create independent animation
+```swift
+        let moveRight = SKAction.moveBy(x: 300, y: 0, duration: 2.0)
+        let moveLeft = SKAction.moveBy(x: -300, y: 0, duration: 2.0)
+        let sequence = SKAction.sequence([moveRight, moveLeft])
+        bot.run(SKAction.repeatForever(sequence))
+```       
